@@ -33,5 +33,5 @@ SELECT * FROM tb_produtos WHERE valor > 500;
 
 SELECT * FROM tb_produtos WHERE valor < 500; 
 
--- Atualizando Endereço do id 5
+-- Atualizando a Descrição do id 16
 UPDATE tb_produtos SET descricao = "Tênis chavoso com 12 molas" WHERE id = 16;

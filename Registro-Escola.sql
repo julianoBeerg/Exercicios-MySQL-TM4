@@ -4,7 +4,7 @@ CREATE DATABASE db_escola;
 -- Selecionando o banco de dados que vou trabalhar
 USE db_escola;
 
--- Criando tabelas com atríbutos de funcionários
+-- Criando tabelas com atríbutos de alunos
 CREATE TABLE tb_alunos(
 id bigint auto_increment,
 nome varchar (255),
@@ -27,12 +27,12 @@ VALUES ("Juliano Nunes", 23, "Matematica", 5.4),
 	   ("Maria", 25, "Portugues", 5.8);
 	 
      
--- Filtando os produtos
+-- Filtando os Alunos
 SELECT * FROM tb_alunos; 
 
 SELECT * FROM tb_alunos WHERE nota >= 7.0; 
 
 SELECT * FROM tb_alunos WHERE nota < 7.0;
 
--- Atualizando Endereço do id 5
+-- Atualizando Notas
 UPDATE tb_alunos SET nota = 7.2 WHERE id = 17;
